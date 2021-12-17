@@ -18,9 +18,9 @@ Given a list of emails, we send one email to each address in the list.  How many
 
 Note:
 
-1 <= emails[i].length <= 100
-1 <= emails.length <= 100
-Each emails[i] contains exactly one '@' character.
+- 1 <= emails[i].length <= 100
+- 1 <= emails.length <= 100
+- Each emails[i] contains exactly one '@' character.
 All local and domain names are non-empty.
 Local names do not start with a '+' character.
 

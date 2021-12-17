@@ -18,7 +18,7 @@ public class JdbiConfiguration {
         TransactionAwareDataSourceProxy proxy = new TransactionAwareDataSourceProxy(ds);
         Jdbi jdbi = Jdbi.create(proxy);
         jdbiPlugins.forEach(plugin -> jdbi.installPlugin(plugin));
-        //rowMappers.forEach(msapper -> jdbi.registerRowMapper(mapper));
+        //rowMappers.forEach(mapper -> jdbi.registerRowMapper(mapper));
         return jdbi;
     }
 }

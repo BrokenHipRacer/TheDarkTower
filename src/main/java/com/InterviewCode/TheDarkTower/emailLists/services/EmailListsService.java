@@ -16,7 +16,7 @@ public class EmailListsService {
     }
 
     // First the code that I was writing in the quick timed interview that was a brute implementation
-    // Second I have had to edit the code to work so it is slightly changed from
+    // Second I have had to edit the code to work so has it's slightly changed from
     public List<String> emails = new ArrayList<>();
 
     public String simpString(String email) {

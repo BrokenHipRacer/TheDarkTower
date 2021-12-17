@@ -11,3 +11,9 @@ What you can do is post interview questions as issues to the repo or just issues
 
 ### How this works
 I will have general cases, and I think I will do multiple tests that cover wider sets because interviewers like to change the test during an interview.
+
+### Side Comments/Notes
+- [16/12/2021] Wouldn't it be great to also have the code coverage reports? ie Sonar
+- [16/12/2021] Haven't tried it from scratch but getting a build system for PR's and add a coverage gate?
+  - overkill on a stupid code project but hell why not
+- 
