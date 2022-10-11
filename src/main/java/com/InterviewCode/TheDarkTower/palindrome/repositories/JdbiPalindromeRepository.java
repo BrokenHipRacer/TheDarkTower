@@ -25,7 +25,7 @@ public class JdbiPalindromeRepository implements  PalindromeRepository{
     }
 
     private static final String SELECT_ALL_WORDS_SQL =
-            "SELECT " + ALL_COLUMNS +
+            "SELECT " + ALL_COLUMNS + " " +
             "FROM " + WORD_TABLE;
 
     @Override
