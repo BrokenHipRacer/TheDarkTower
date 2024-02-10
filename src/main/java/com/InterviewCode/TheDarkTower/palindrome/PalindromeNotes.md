@@ -1,0 +1,1 @@
+So When I clean trans. to 21 I don't have the DB setup yet but will copy over the files, so I have them for later.

@@ -32,7 +32,7 @@ public class PalindromeController {
 	}
 
 	@GetMapping("/exampleAsObject")
-	ResponseEntity<Object> madeUpPalindromResult() {
+	ResponseEntity<Object> madeUpPalindromeResult() {
 		return ResponseEntity.ok(palindromeService.resultSample());
 	}
 	
