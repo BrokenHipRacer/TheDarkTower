@@ -1,27 +1,17 @@
-package com.InterviewCode.TheDarkTower;
+package com.InterviewCode.TheDarkTower.unit.palindrome;
 
 import com.InterviewCode.TheDarkTower.palindrome.services.PalindromeService;
-import io.vavr.collection.List;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
-@RunWith(SpringRunner.class)
 public class PalindromeServiceTest {
 
     @Autowired
     PalindromeService palindromeService;
-
-    @Test
-    public void getAllTest() {
-        List<String> expected = List.of("1221", "poop", "pop");
-        assertEquals(palindromeService.getAll(), expected);
-    }
 
     @Test
     public void exampleTest() {
@@ -32,24 +22,24 @@ public class PalindromeServiceTest {
     @Test
     public void isPalindromeByBufferTestSuccess() {
         String expectedPassing = "1221";
-        assertEquals(palindromeService.isPalindromeByBuffer(expectedPassing), true);
+        assertEquals(palindromeService.isPalindromeByBuffer(expectedPassing).getIsPalindrome(), true);
     }
 
     @Test
     public void isPalindromeByBufferTestFail() {
         String expectedFailing = "1234";
-        assertEquals(palindromeService.isPalindromeByBuffer(expectedFailing), false);
+        assertEquals(palindromeService.isPalindromeByBuffer(expectedFailing).getIsPalindrome(), false);
     }
 
     @Test
     public void isPalindromeWithoutBufferTestSuccess() {
         String expectedSuccess = "pippip";
-        assertEquals(palindromeService.isPalindromeWithoutBuffer(expectedSuccess), true);
+        assertEquals(palindromeService.isPalindromeWithoutBuffer(expectedSuccess).isPalindrome, true);
     }
 
     @Test
     public void isPalindromeWithoutBufferTestFail() {
         String expectedFailing = "alpha";
-        assertEquals(palindromeService.isPalindromeWithoutBuffer(expectedFailing), false);
+        assertEquals(palindromeService.isPalindromeWithoutBuffer(expectedFailing).isPalindrome, false);
     }
 }
