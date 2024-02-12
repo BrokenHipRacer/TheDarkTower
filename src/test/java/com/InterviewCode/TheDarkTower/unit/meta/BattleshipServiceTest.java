@@ -30,7 +30,7 @@ public class BattleshipServiceTest {
     @Test
     public void getHitProbabilitySampleCase2() {
         int R = 2;
-        int C = 3;
+        int C = 2;
         int[][] G = new int[2][2];
         G[0][0] = 1;
         G[0][1] = 1;
