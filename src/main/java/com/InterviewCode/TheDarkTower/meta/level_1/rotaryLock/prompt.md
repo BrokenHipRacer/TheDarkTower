@@ -1,4 +1,4 @@
-Note: Chapter 2 is a harder version of this puzzle.
+_Note: Chapter 2 is a harder version of this puzzle._
 
 You're trying to open a lock. The lock comes with a wheel which has the integers from 1 to *N* arranged in a circle in 
 order around it (with integers 1 and *N* adjacent to one another). The wheel is initially pointing at 1.
@@ -9,9 +9,9 @@ It takes 1 second to rotate the wheel by 1 unit to an adjacent integer in either
 select an integer once the wheel is pointing at it.
 
 The lock will open if you enter a certain code. The code consists of a sequence of *M* integers, the *i*th of which is 
-C*i*. Determine the minimum number of seconds required to select all *M* of the code's integers in order.
+*C<sub>i</sub>*. Determine the minimum number of seconds required to select all *M* of the code's integers in order.
 
-Please take care to write a solution which runs within the time limit.  (**HAHAHAHA** Time limit says 5s)
+*Please take care to write a solution which runs within the time limit.*  (**HAHAHAHA** Time limit says 5s)
 
 ---
 
@@ -21,7 +21,7 @@ Please take care to write a solution which runs within the time limit.  (**HAHAH
 
 1 ≤ *M* ≤ 1,000
 
-1 ≤ C*i* ≤ N
+1 ≤ *C<sub>i</sub>* ≤ N
 
 ---
 

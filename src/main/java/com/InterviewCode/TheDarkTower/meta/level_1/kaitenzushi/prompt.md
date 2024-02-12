@@ -1,4 +1,4 @@
-There are *N* dishes in a row on a kaiten belt, with the *i*th dish being of type D*i*. Some dishes may be of the same 
+There are *N* dishes in a row on a kaiten belt, with the *i*th dish being of type *D<sub>i</sub>*. Some dishes may be of the same 
 type as one another.
 
 You're very hungry, but you'd also like to keep things interesting. The *N* dishes will arrive in front of you, one 
@@ -8,54 +8,46 @@ not to eat as they pass will be eaten by others.
 
 Determine how many dishes you'll end up eating.
 
-Please take care to write a solution which runs within the time limit.  (**HAHAHAHA** Time limit says 5s)
+*Please take care to write a solution which runs within the time limit.*  (**HAHAHAHA** Time limit says 5s)
 
 ---
 
 **Constraints**
 
-1 ≤ N ≤ 500,000
+1 ≤ *N* ≤ 500,000
 
-1 ≤ K ≤ N
+1 ≤ *K* ≤ *N*
 
-1 ≤ D*i* ≤ 1,000,000
+1 ≤ *D<sub>i</sub>* ≤ 1,000,000
 
 ---
 
 Sample test case #1
 ```
 N = 6
-
 D = [1, 2, 3, 3, 2, 1]
-
 K = 1
 ```
 ```
 Expected Return Value = 5
 ```
-
 ---
 
 Sample test case #2
 ```
 N = 6
-
 D = [1, 2, 3, 3, 2, 1]
-
 K = 2
 ```
 ```
 Expected Return Value = 4
 ```
-
 ---
 
 Sample test case #3
 ```
 N = 7
-
 D = [1, 2, 1, 2, 1, 2, 1]
-
 K = 2
 ```
 ```
