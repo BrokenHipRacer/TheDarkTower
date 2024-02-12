@@ -48,4 +48,44 @@ public class AllWrongServiceTest {
         String C = "BBBBB";
         assertNotEquals(allWrongService.getWrongAnswerIssueWithN(N,C), "AAAAA");
     }
+
+    @Test
+    public void getWrongAnswersSmallSampleCase1() {
+        String C = "ABA";
+        assertEquals(allWrongService.getWrongAnswers(C), "BAB");
+    }
+
+    @Test
+    public void getWrongAnswersSmallSampleCase2() {
+        String C = "BBBBB";
+        assertEquals(allWrongService.getWrongAnswers(C), "AAAAA");
+    }
+
+    @Test
+    public void getWrongAnswersCaseInsensitiveSampleCase1_A() {
+        int N = 3;
+        String C = "ABA";
+        assertEquals(allWrongService.getWrongAnswersCaseInsensitive(N,C), "BAB");
+    }
+
+    @Test
+    public void getWrongAnswersCaseInsensitiveSampleCase1_B() {
+        int N = 3;
+        String C = "aBA";
+        assertEquals(allWrongService.getWrongAnswersCaseInsensitive(N,C), "BAB");
+    }
+
+    @Test
+    public void getWrongAnswersCaseInsensitiveSampleCase2_A() {
+        int N = 5;
+        String C = "BBBBB";
+        assertEquals(allWrongService.getWrongAnswersCaseInsensitive(N,C), "AAAAA");
+    }
+
+    @Test
+    public void getWrongAnswersCaseInsensitiveSampleCase2_B() {
+        int N = 5;
+        String C = "BbBbB";
+        assertEquals(allWrongService.getWrongAnswersCaseInsensitive(N,C), "AAAAA");
+    }
 }
