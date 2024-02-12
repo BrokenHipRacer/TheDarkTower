@@ -16,7 +16,6 @@ public class AllWrongService {
                 inverted += "A";
             }
         }
-        // Write your code here
         return inverted;
     }
 
