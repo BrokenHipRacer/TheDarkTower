@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 public class AllWrongService {
 
     //quick and dirty, could get LONG depending on String C
+    //Big Θ = C
     public String getWrongAnswers(int N, String C) {
         String inverted = "";
         Character chA = 'A';
@@ -20,7 +21,8 @@ public class AllWrongService {
         return inverted;
     }
 
-    // This might not cycle through all the string C
+    //This might not cycle through all the string C
+    //Big Θ = N
     public String getWrongAnswerIssueWithN(int N, String C) {
         String inverted = "";
         Character chA = 'A';
