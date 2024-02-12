@@ -60,4 +60,7 @@ public class AllWrongService {
         }
         return inverted;
     }
+
+    //What if there is more than A and B but C and D as well?
+    //Then need to change the signature to have a mapping to what each of the answers change to
 }
