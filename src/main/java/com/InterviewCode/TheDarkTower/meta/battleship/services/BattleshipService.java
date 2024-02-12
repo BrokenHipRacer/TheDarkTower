@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 public class BattleshipService {
 
     //quick and has a problem that R and/or C could be out of bounds for G
+    //Big Θ = R*C (N^2)
     public double getHitProbability(int R, int C, int[][] G) {
         int targets = 0;
         for (int rowIndex = 0; rowIndex < R; rowIndex++) {
